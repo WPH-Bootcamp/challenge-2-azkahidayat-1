@@ -2,13 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - 2</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/landing-page.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- code here -->
+    <!-- code here -->
+    <div class="container">
+      <!-- 1. Header -->
+      <header>
+        <div class="bg-header"></div>
+        <a href="#home" class="logo"
+          ><img src="./assets/images/logo.svg" alt="Tech.logo"
+        /></a>
+
+        <nav class="menu">
+          <ul class="nav-links">
+            <li class="nav-menu"><a href="#about">About</a></li>
+            <li class="nav-menu"><a href="#service">Service</a></li>
+            <li class="nav-menu"><a href="#our-work">Our Work</a></li>
+            <li class="nav-menu"><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-container">
+          <a href="#contact-us">
+            <button class="btn contact-us-btn">Contact Us</button></a
+          >
+        </div>
+
+        <div class="hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <!-- 2. Hero section -->
+      <section class="hero" id="home">
+        <div class="text">
+          <h2>Build with the <span>Future.</span></h2>
+          <p>
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+          <a href="#contact-us"><button class="btn">Let's Talk</button></a>
+        </div>
+        <div class="pict">
+          <img src="./assets/images/hero-hand.png" alt="phone" />
+        </div>
+      </section>
+    </div>
+    <!-- to be continued -->
+    <script src="./script.js"></script>
   </body>
 </html>
