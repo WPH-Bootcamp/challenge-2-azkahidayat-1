@@ -196,6 +196,240 @@ header {
   margin: 0 auto;
 }
 
+/* 3. Who we are section */
+.who-we-are {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.who-we-are h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fdfdfd;
+}
+
+.who-we-are p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #717680;
+}
+
+.who-we-are p span {
+  color: #fdfdfd;
+}
+
+/* 4. What we do section */
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 24px;
+  text-align: center;
+}
+.what-we-do .text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fdfdfd;
+}
+
+.what-we-do .text p {
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #717680;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #181d27;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card img {
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+
+  color: #fdfdfd;
+}
+.card p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #717680;
+}
+
+/* 5. Our work section */
+.our-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 24px;
+  text-align: center;
+}
+.our-work .text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fdfdfd;
+}
+.our-work .text p {
+  font-weight: 300;
+  font-size: 14px;
+
+  color: #717680;
+}
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 6. Meet the Team Section */
+.meet-the-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 24px;
+  text-align: center;
+}
+.meet-the-team .text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fdfdfd;
+}
+.meet-the-team .text p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #717680;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 7. Let’s Collaborate Section */
+.let-us-colaborate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 24px;
+  text-align: center;
+}
+.let-us-colaborate .text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fdfdfd;
+}
+.let-us-colaborate .text p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+
+  color: #717680;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+.form div label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #fdfdfd;
+  text-align: left;
+}
+
+.form div input,
+.form div textarea {
+  background: transparent;
+  border: 1px solid #252b37;
+  border-radius: 12px;
+  padding: 12px;
+  color: #fdfdfd;
+  font-weight: 100;
+  font-size: 14px;
+}
+.form div textarea {
+  resize: vertical;
+  min-height: 134px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #717680;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* 8. footer */
+footer {
+  padding: 24px 20px;
+  border-top: 1px solid #252b37;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #717680;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   /* 1. Header */
   header {
@@ -255,6 +489,42 @@ header {
     top: 17px;
     right: 50px;
   }
+  /* 3. Who we are section */
+  .who-we-are {
+    padding: 40px 70px;
+  }
+
+  /* 4. What we do section */
+
+  .what-we-do {
+    padding: 40px 70px;
+  }
+  /* 5. Our work section */
+  .our-work {
+    padding: 40px 70px;
+  }
+
+  /* 6. Meet the Team Section */
+  .meet-the-team {
+    padding: 40px 70px;
+  }
+
+  .members {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 100px;
+  }
+
+  /* 7. Let’s Collaborate Section */
+  .let-us-colaborate {
+    padding: 40px 70px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 592px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -270,6 +540,7 @@ header {
   .hero .text .btn {
     margin-top: 20px;
   }
+
   .hero .pict {
     max-width: 360px;
     top: 0px;
@@ -317,5 +588,95 @@ header {
     max-width: 600px;
     top: -40px;
     right: 140px;
+  }
+
+  /* 3. Who we are section */
+  .who-we-are {
+    gap: 32px;
+    padding: 40px 140px;
+  }
+
+  .who-we-are h2 {
+    font-size: 40px;
+  }
+
+  .who-we-are p {
+    font-size: 32px;
+    line-height: 56px;
+  }
+
+  /* 4. What we do section */
+  .what-we-do {
+    padding: 40px 140px;
+    gap: 64px;
+  }
+
+  .what-we-do .text h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .what-we-do .text p {
+    font-size: 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 5. Our work section */
+  .our-work {
+    padding: 40px 140px;
+    gap: 64px;
+  }
+
+  .our-work .text h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .our-work .text p {
+    font-size: 20px;
+  }
+
+  .portfolio-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* 6. Meet the Team Section */
+  .meet-the-team {
+    padding: 40px 140px;
+    gap: 64px;
+  }
+
+  .meet-the-team .text h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .meet-the-team .text p {
+    font-size: 20px;
+  }
+
+  .members {
+    grid-template-columns: repeat(4, auto);
+    gap: 56px;
+  }
+
+  /* 7. Let’s Collaborate Section */
+  .let-us-colaborate {
+    padding: 40px 140px;
+    gap: 64px;
+  }
+
+  .let-us-colaborate .text h2 {
+    font-size: 40px;
+
+    margin-bottom: 16px;
+  }
+
+  .let-us-colaborate .text p {
+    font-size: 20px;
   }
 }
